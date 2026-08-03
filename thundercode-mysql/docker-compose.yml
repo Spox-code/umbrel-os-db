@@ -15,7 +15,7 @@ services:
       - ${APP_DATA_DIR}/mysql:/var/lib/mysql
     networks:
       mysql-net:
-        ipv4_address: 10.21.21.254
+        ipv4_address: 192.168.99.5
 
 networks:
   mysql-net:
@@ -23,4 +23,4 @@ networks:
     driver: bridge
     ipam:
       config:
-        - subnet: 10.21.21.0/24
+        - subnet: 192.168.99.0/24

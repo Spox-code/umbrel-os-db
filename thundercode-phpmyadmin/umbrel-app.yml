@@ -8,7 +8,7 @@ version: "1.0.0"
 port: 80
 description: >-
   A web interface for managing your MySQL databases. It connects to the
-  MySQL Server app from this store on its fixed IP 10.21.21.254:3306.
+  MySQL Server app from this store on its fixed IP 192.168.99.5:3306.
   Requires the MySQL Server app to be installed first.
 developer: ThunderCode
 website: https://www.phpmyadmin.net
@@ -21,7 +21,7 @@ gallery:
   - https://www.phpmyadmin.net/images/screenshots/1_interface.png
   - https://www.phpmyadmin.net/images/screenshots/1_interface.png
 releaseNotes: >-
-  Initial release. Connects to the MySQL Server app on 10.21.21.254:3306.
+  Initial release. Connects to the MySQL Server app on 192.168.99.5:3306.
 dependencies:
   - thundercode-mysql
 path: ""

@@ -7,7 +7,7 @@ category: Development
 version: "1.0.0"
 description: >-
   A standalone MySQL 8 server for your Umbrel. It always runs on the fixed
-  internal IP 10.21.21.254:3306 so other apps can reliably connect to it.
+  internal IP 192.168.99.5:3306 so other apps can reliably connect to it.
   Manage it with the phpMyAdmin app from this store.
 developer: ThunderCode
 website: https://www.mysql.com
@@ -20,7 +20,7 @@ gallery:
   - https://www.mysql.com/common/logos/logo-mysql-170x115.png
   - https://www.mysql.com/common/logos/logo-mysql-170x115.png
 releaseNotes: >-
-  Initial release. MySQL 8 server on the fixed IP 10.21.21.254:3306.
+  Initial release. MySQL 8 server on the fixed IP 192.168.99.5:3306.
 dependencies: []
 path: ""
 defaultUsername: "root"
