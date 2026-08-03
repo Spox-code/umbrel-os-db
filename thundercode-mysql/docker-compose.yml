@@ -26,7 +26,7 @@ services:
     depends_on:
       - mysql
     environment:
-      PMA_HOST: mysql
+      PMA_HOST: thundercode-mysql_mysql_1
       PMA_PORT: 3306
       PMA_ARBITRARY: 1
       UPLOAD_LIMIT: 100M
