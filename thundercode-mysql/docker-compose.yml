@@ -15,7 +15,7 @@ services:
       - ${APP_DATA_DIR}/mysql:/var/lib/mysql
     networks:
       mysql-net:
-        ipv4_address: 10.21.21.5
+        ipv4_address: 10.21.21.254
 
 networks:
   mysql-net:
