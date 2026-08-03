@@ -1,0 +1,26 @@
+version: "3.7"
+
+services:
+
+  app_proxy:
+    environment:
+      # The format here is: <app-id>_<docker-service-name>_1
+      APP_HOST: thundercode-phpmyadmin_phpmyadmin_1
+      APP_PORT: 80
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    restart: on-failure
+    environment:
+      PMA_HOST: 10.21.21.5
+      PMA_PORT: 3306
+      PMA_ARBITRARY: 1
+      UPLOAD_LIMIT: 100M
+    networks:
+      - default
+      - mysql-net
+
+networks:
+  mysql-net:
+    external: true
+    name: thundercode-mysql-net
