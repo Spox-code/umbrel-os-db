@@ -19,9 +19,8 @@ services:
       MYSQL_PASSWORD: ${APP_SEED_MYSQL_PASSWORD}
     volumes:
       - ${APP_DATA_DIR}/mysql:/var/lib/mysql
-    networks:
-      mysql-net:
-        ipv4_address: 192.168.99.5
+    ports:
+      - "3306:3306"
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin:latest
@@ -29,18 +28,7 @@ services:
     depends_on:
       - mysql
     environment:
-      PMA_HOST: 192.168.99.5
+      PMA_HOST: mysql
       PMA_PORT: 3306
       PMA_ARBITRARY: 1
       UPLOAD_LIMIT: 100M
-    networks:
-      - default
-      - mysql-net
-
-networks:
-  mysql-net:
-    name: thundercode-mysql-net
-    driver: bridge
-    ipam:
-      config:
-        - subnet: 192.168.99.0/24
