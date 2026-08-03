@@ -1,26 +1,29 @@
 manifestVersion: 1
 id: thundercode-mysql
-name: MySQL Server
-tagline: Standalone MySQL database server with a fixed IP
-icon: https://www.mysql.com/common/logos/logo-mysql-170x115.png
+name: MySQL Server + phpMyAdmin
+tagline: MySQL database with a web management interface
+icon: https://www.phpmyadmin.net/static/images/logo-og.png
 category: Development
-version: "1.0.0"
+version: "1.0.1"
+port: 80
 description: >-
-  A standalone MySQL 8 server for your Umbrel. It always runs on the fixed
-  internal IP 192.168.99.5:3306 so other apps can reliably connect to it.
-  Manage it with the phpMyAdmin app from this store.
+  A MySQL 8 server for your Umbrel with phpMyAdmin included. The database
+  always runs on the fixed internal IP 192.168.99.5:3306 so your apps
+  (e.g. a Minecraft server) can reliably connect to it. Manage everything
+  through the phpMyAdmin web interface.
 developer: ThunderCode
-website: https://www.mysql.com
+website: https://www.phpmyadmin.net
 submitter: ThunderCode
 submission: https://github.com/Spox-code/umbrel-os-db
 repo: https://github.com/Spox-code/umbrel-os-db
 support: https://github.com/Spox-code/umbrel-os-db/issues
 gallery:
+  - https://www.phpmyadmin.net/images/screenshots/1_interface.png
   - https://www.mysql.com/common/logos/logo-mysql-170x115.png
-  - https://www.mysql.com/common/logos/logo-mysql-170x115.png
-  - https://www.mysql.com/common/logos/logo-mysql-170x115.png
+  - https://www.phpmyadmin.net/images/screenshots/1_interface.png
 releaseNotes: >-
-  Initial release. MySQL 8 server on the fixed IP 192.168.99.5:3306.
+  Merged MySQL Server and phpMyAdmin into a single app. Fixed IP
+  192.168.99.5:3306. Login to phpMyAdmin with root + your password.
 dependencies: []
 path: ""
 defaultUsername: "root"
