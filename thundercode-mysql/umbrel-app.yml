@@ -4,8 +4,8 @@ name: MySQL Server + phpMyAdmin
 tagline: MySQL database with a web management interface
 icon: https://www.phpmyadmin.net/static/images/logo-og.png
 category: Development
-version: "1.0.3"
-port: 80
+version: "1.0.4"
+port: 8090
 description: >-
   A MySQL 8 server for your Umbrel with phpMyAdmin included. Login to
   phpMyAdmin with root + your password and manage your databases from the
@@ -21,8 +21,8 @@ gallery:
   - https://www.mysql.com/common/logos/logo-mysql-170x115.png
   - https://www.phpmyadmin.net/images/screenshots/1_interface.png
 releaseNotes: >-
-  Minimal, standard configuration (no custom networks, no port mapping) to
-  guarantee installation. phpMyAdmin is included.
+  Fixed: the app used host port 80, which collided with the Umbrel dashboard.
+  Now served on port 8090.
 dependencies: []
 path: ""
 defaultUsername: "root"
