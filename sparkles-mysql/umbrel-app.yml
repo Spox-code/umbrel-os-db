@@ -1,0 +1,48 @@
+manifestVersion: 1
+id: sparkles-mysql
+name: MySQL Server
+tagline: Standalone MySQL database server with a fixed IP
+icon: https://www.mysql.com/common/logos/logo-mysql-170x115.png
+category: Development
+version: "1.0.0"
+description: >-
+  A standalone MySQL 8 server for your Umbrel. It always runs on the fixed
+  internal IP 10.21.21.5:3306 so other apps can reliably connect to it.
+  Manage it with the phpMyAdmin app from this store.
+developer: ThunderCode
+website: https://www.mysql.com
+submitter: ThunderCode
+submission: https://github.com/getumbrel/umbrel-hello-world-app
+repo: https://github.com/getumbrel/umbrel-hello-world-app
+support: https://github.com/getumbrel/umbrel-hello-world-app/issues
+gallery:
+  - https://www.mysql.com/common/logos/logo-mysql-170x115.png
+  - https://www.mysql.com/common/logos/logo-mysql-170x115.png
+  - https://www.mysql.com/common/logos/logo-mysql-170x115.png
+releaseNotes: >-
+  Initial release. MySQL 8 server on the fixed IP 10.21.21.5:3306.
+dependencies: []
+path: ""
+defaultUsername: "root"
+defaultPassword: ""
+environmentVariables:
+  - id: MYSQL_ROOT_PASSWORD
+    name: MySQL root password
+    description: Password for the MySQL root user. Only used on first start.
+    default: "changeme"
+    required: true
+  - id: MYSQL_DATABASE
+    name: MySQL database name
+    description: Name of the database created on first start.
+    default: "umbrel"
+    required: false
+  - id: MYSQL_USER
+    name: MySQL username
+    description: User account created on first start.
+    default: "umbrel"
+    required: false
+  - id: MYSQL_PASSWORD
+    name: MySQL user password
+    description: Password for the user account above.
+    default: "changeme"
+    required: false
