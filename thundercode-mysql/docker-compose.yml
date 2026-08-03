@@ -19,8 +19,6 @@ services:
       MYSQL_PASSWORD: ${APP_SEED_MYSQL_PASSWORD}
     volumes:
       - ${APP_DATA_DIR}/mysql:/var/lib/mysql
-    ports:
-      - "3306:3306"
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin:latest

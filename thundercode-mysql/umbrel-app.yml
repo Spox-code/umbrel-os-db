@@ -4,13 +4,12 @@ name: MySQL Server + phpMyAdmin
 tagline: MySQL database with a web management interface
 icon: https://www.phpmyadmin.net/static/images/logo-og.png
 category: Development
-version: "1.0.2"
+version: "1.0.3"
 port: 80
 description: >-
-  A MySQL 8 server for your Umbrel with phpMyAdmin included. The database
-  is reachable on port 3306 at your Umbrel's IP (e.g. 10.21.0.8:3306) so
-  your Minecraft server or other apps can connect to it. Manage everything
-  through the phpMyAdmin web interface.
+  A MySQL 8 server for your Umbrel with phpMyAdmin included. Login to
+  phpMyAdmin with root + your password and manage your databases from the
+  web interface. Perfect as a database for your Minecraft server.
 developer: ThunderCode
 website: https://www.phpmyadmin.net
 submitter: ThunderCode
@@ -22,9 +21,8 @@ gallery:
   - https://www.mysql.com/common/logos/logo-mysql-170x115.png
   - https://www.phpmyadmin.net/images/screenshots/1_interface.png
 releaseNotes: >-
-  Removed the fixed internal IP that was blocking installation. MySQL is now
-  exposed on port 3306 at your Umbrel IP (10.21.0.8:3306). Login to
-  phpMyAdmin with root + your password.
+  Minimal, standard configuration (no custom networks, no port mapping) to
+  guarantee installation. phpMyAdmin is included.
 dependencies: []
 path: ""
 defaultUsername: "root"
