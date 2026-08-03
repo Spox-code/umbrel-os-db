@@ -4,7 +4,7 @@ name: MySQL Server + phpMyAdmin
 tagline: MySQL database with a web management interface
 icon: https://www.phpmyadmin.net/static/images/logo-og.png
 category: Development
-version: "1.0.5"
+version: "1.0.6"
 port: 8090
 description: >-
   A MySQL 8 server for your Umbrel with phpMyAdmin included. Login to
@@ -21,8 +21,9 @@ gallery:
   - https://www.mysql.com/common/logos/logo-mysql-170x115.png
   - https://www.phpmyadmin.net/images/screenshots/1_interface.png
 releaseNotes: >-
-  Fixed: phpMyAdmin now connects to the full container name
-  thundercode-mysql_mysql_1 instead of "mysql".
+  Fixed: MySQL now always starts even when no password is provided in the
+  setup (falls back to root/changeme). Also connects phpMyAdmin to the full
+  container name.
 dependencies: []
 path: ""
 defaultUsername: "root"
